@@ -56,5 +56,9 @@ base.metadata.create_all(db)
 #     print(artist.ArtistId,artist.Name, sep = " |--- ")
 
 # Query 3
-artist = session.query(Artist).filter_by(Name = "Queen").first()
-print(artist.ArtistId, artist.Name, sep = " | ")
+# artist = session.query(Artist).filter_by(ArtistId = "22").first()
+# print(artist.ArtistId, artist.Name, sep = " | ")
+
+Albums = session.query(Album).filter_by(ArtistId = "22")
+for album in Albums:
+    print(album.Title)

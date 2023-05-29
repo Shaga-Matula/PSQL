@@ -80,16 +80,24 @@ tim_berners_lee = Programmer(
     famous_for="World Wide Web"
 )
 
+paul_gleeson = Programmer(
+    first_name="Paul",
+    last_name="Gleeson",
+    gender="M",
+    nationality="Irish",
+    famous_for="Being Mad"
+)
+
 # add each instance of our programmers to our session
-session.add(ada_lovelace)
-session.add(alan_turing)
-session.add(grace_hopper)
-session.add(margaret_hamilton)
-session.add(bill_gates)
-session.add(tim_berners_lee)
+# session.add(ada_lovelace)
+# session.add(alan_turing)
+# session.add(grace_hopper)
+# session.add(margaret_hamilton)
+# session.add(bill_gates)
+# session.add(paul_gleeson)
 
 # commit our session to the database
-session.commit()
+# session.commit()
 
 
 # query the database to find all Programmers
